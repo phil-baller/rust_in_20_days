@@ -1,52 +1,12 @@
-   0.003619958s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs", Edition2024) }
-   0.003640333s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/philballer/Desktop/Projects/learning_rust/guessing_game/target/debug/.fingerprint/guessing_game-ae33a65ca14e3e36/bin-guessing_game`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: std::backtrace::Backtrace::create
-   1: std::backtrace::Backtrace::capture
-   2: cargo_util::paths::read_bytes
-   3: cargo_util::paths::read
-   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   5: cargo::core::compiler::fingerprint::prepare_target
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::main
-  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  15: std::rt::lang_start::<()>::{closure#0}
-  16: std::rt::lang_start_internal
-  17: _main
-   0.006205208s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint error for guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs", Edition2024) }
-   0.006213083s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/philballer/Desktop/Projects/learning_rust/guessing_game/target/debug/.fingerprint/guessing_game-fab1b4371ccbec40/test-bin-guessing_game`
-
-Caused by:
-    No such file or directory (os error 2)
-
-Stack backtrace:
-   0: std::backtrace::Backtrace::create
-   1: std::backtrace::Backtrace::capture
-   2: cargo_util::paths::read_bytes
-   3: cargo_util::paths::read
-   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
-   5: cargo::core::compiler::fingerprint::prepare_target
-   6: cargo::core::compiler::compile
-   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
-   8: cargo::ops::cargo_compile::compile_ws
-   9: cargo::ops::cargo_compile::compile_with_exec
-  10: cargo::ops::cargo_compile::compile
-  11: cargo::commands::check::exec
-  12: <cargo::cli::Exec>::exec
-  13: cargo::main
-  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
-  15: std::rt::lang_start::<()>::{closure#0}
-  16: std::rt::lang_start_internal
-  17: _main
+   0.007027292s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: stale: changed "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs"
+   0.007042167s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:           (vs) "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/target/debug/.fingerprint/guessing_game-a2edf900acd099a0/dep-bin-guessing_game"
+   0.007046250s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1762475271, nanos: 854942330 } < FileTime { seconds: 1762475309, nanos: 411308409 }
+   0.007111584s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game)/Check { test: false }/TargetInner { name: "guessing_game", doc: true, ..: with_path("/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs", Edition2024) }
+   0.007121792s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/target/debug/.fingerprint/guessing_game-a2edf900acd099a0/dep-bin-guessing_game", reference_mtime: FileTime { seconds: 1762475271, nanos: 854942330 }, stale: "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs", stale_mtime: FileTime { seconds: 1762475309, nanos: 411308409 } }))
+   0.007656459s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: stale: changed "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs"
+   0.007659959s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:           (vs) "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/target/debug/.fingerprint/guessing_game-0867afa0424187a7/dep-test-bin-guessing_game"
+   0.007662375s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1762475271, nanos: 854885746 } < FileTime { seconds: 1762475309, nanos: 411308409 }
+   0.007716750s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint: fingerprint dirty for guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game)/Check { test: true }/TargetInner { name: "guessing_game", doc: true, ..: with_path("/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs", Edition2024) }
+   0.007722292s  INFO prepare_target{force=false package_id=guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game) target="guessing_game"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/target/debug/.fingerprint/guessing_game-0867afa0424187a7/dep-test-bin-guessing_game", reference_mtime: FileTime { seconds: 1762475271, nanos: 854885746 }, stale: "/Users/philballer/Desktop/Projects/learning_rust/guessing_game/src/main.rs", stale_mtime: FileTime { seconds: 1762475309, nanos: 411308409 } }))
     Checking guessing_game v0.1.0 (/Users/philballer/Desktop/Projects/learning_rust/guessing_game)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.03s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
